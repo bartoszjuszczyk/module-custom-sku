@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Bartosz Juszczyk <b.juszczyk@bjuszczyk.pl>
+ * @copyright Copyright (C) 2025 Bartosz Juszczyk
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="catalog_product_save_after">
+        <observer name="juszczyk_custom_sku_update_custom_sku_changelog"
+                  instance="Juszczyk\CustomSku\Observer\UpdateCustomSkuChangelog"/>
+    </event>
+</config>

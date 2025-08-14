@@ -1,0 +1,3 @@
+"Custom SKU Config","Custom SKU Config"
+"Retention days","Retention days"
+"Days after which entries in the custom_sku attribute changelog table will be deleted (0 for disable).","Days after which entries in the custom_sku attribute changelog table will be deleted (0 for disable)."

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="juszczyk" sortOrder="900">
+            <label>Juszczyk</label>
+        </tab>
+        <section id="custom_sku" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+            <tab>juszczyk</tab>
+            <label>Custom SKU</label>
+            <resource>Juszczyk_CustomSku::config</resource>
+            <group id="general" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General</label>
+                <field id="retention_days" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" type="text" translate="label comment">
+                    <label>Retention days</label>
+                    <comment>Days after which entries in the custom_sku attribute changelog table will be deleted (0 for disable).</comment>
+                    <validate>validate-zero-or-greater</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
